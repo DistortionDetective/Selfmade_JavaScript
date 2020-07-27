@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>js_계산기</title>
+        <script>
+            function test() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                var value;
+            }
+
+            /* plus */
+            function sum() {
+                test();
+                value = parseInt(a) + parseInt(b);
+                document.getElementById('value').value = value;
+            }
+            /* minus */
+            function minus() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                var value;
+                value = parseInt(a) - parseInt(b);
+                document.getElementById('value').value = value;
+            }
+            /* multiplication */
+            function multiplication() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                var value;
+                value = parseInt(a) * parseInt(b);
+                document.getElementById('value').value = value;
+            }
+            /* division */
+            function division() {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+
+                var value;
+                value = parseInt(a) / parseInt(b);
+                document.getElementById('value').value = value;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>js_계산기입니다.</h1>
+        첫번째 계산 숫자 : <input type="text" id="a"> <br>
+        두번째 계산 숫자 : <input type="text" id="b"> <br>
+        <input type="button" value="+" onclick="sum();">
+        <input type="button" value="-" onclick="minus();">
+        <input type="button" value="*" onclick="multiplication();">
+        <input type="button" value="/" onclick="division();"> <br>
+        결과 : <input type="text" id="value">
+    </body>
+</html>

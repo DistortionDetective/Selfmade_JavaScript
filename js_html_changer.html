@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>html_changer</title>
+        <script>
+
+            function html_changer(a) {
+                document.getElementById('html_div').innerHTML = a;
+            }
+            function html_alert() {
+                var val = document.getElementById('html_div').innerHTML;
+                alert(val);
+            }
+            function html_color() {
+                document.getElementById('html_div').style.color = 'blue';
+            }
+            function html_color_origin() {
+                document.getElementById('html_div').style.color = 'black';
+            }
+            function html_font() {
+                document.getElementById('html_div').style.fontFamily = 'serif';
+            }
+        </script>
+    </head>
+    <body>
+        <div id="html_div">이곳의 html 요소는 js로 변경되고 다른 요소로 변경될수있습니다.</div>
+        <input type="button" value="내용 변경" onclick="html_changer('js로 인해 변경된 내용입니다!')">
+        <input type="button" value="내용 출력(alert으로 출력됩니다.)" onclick="html_alert()">
+        <input type="button" value="색상변경" onclick="html_color()">
+        <input type="button" value="색상을 원래대로" onclick="html_color_origin()">
+        <input type="button" value="폰트변경" onclick="html_font()">
+    </body>
+</html>

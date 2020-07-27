@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bom_Move</title>
+    <script>
+        var w;
+        function openWindow() {
+            w = window.open(' ' , ' ' , 'width = 200 , height = 100');
+            w.document.write('<p>오늘 다음과 같은 상품을 싸게팝니다.</p>');
+            w.moveTo(10 , 10);
+        }
+        function moveWindow() {
+            w.moveBy(25 , 25);
+            w.focus();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="윈도우 생성" onclick="openWindow()"> <br>
+    <input type="button" value='윈도우 생성' onclick='moveWindow();'>
+</body>
+</html>

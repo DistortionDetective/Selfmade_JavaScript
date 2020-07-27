@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Dom_elem_mod</title>
+        <script>
+            function get() {
+                var val = document.getElementById('ex').innerHTML;
+                alert(val);
+            }
+            function set(v) {
+                document.getElementById('ex').innerHTML = v;
+            }
+        </script>
+    </head>
+    <body>
+        <div id = 'ex'>여기가 div로 선언되었습니다.</div>
+        <a href="#" onclick="get()">div 요소 내용 출력하기</a> <br>
+        <a href="#" onclick="set('변경되었습니다.')">div 요소 내용 변경하기</a> <br>
+        <a href="#" onclick="set('원상태로 복구되었습니다.')">원래대로 되돌리기</a>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas_rect_1</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="200"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        context.beginPath();
+        context.rect(10 , 10 , 100 , 100);
+        context.fillStyle = 'yellow';
+        context.fill();
+    </script>
+</body>
+</html>

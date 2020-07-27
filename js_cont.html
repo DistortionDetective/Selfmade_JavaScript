@@ -1,0 +1,20 @@
+<script>
+    var msg = "";
+    for (var i = 0 ; i < 10; i++) {
+        if (i == 3) continue;
+        msg += i + "<br>";
+    }
+    document.write(msg);
+/*
+    1번 실행 i = 0 msg = 0
+    2번 실행 i = 1 msg = 1
+    3번 실행 i = 실행불가(continue)  msg = 실행불가(continue)
+    4번 실행 i = 2 msg = 2
+    5번 실행 i = 4 msg = 4
+    6번 실행 i = 5 msg = 5   
+    7번 실행 i = 6 msg = 6
+    8번 실행 i = 7 msg = 7
+    9번 실행 i = 8 msg = 8
+    10번 실행 i = 9 msg = 9
+*/
+</script>

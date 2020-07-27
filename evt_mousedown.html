@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evt_MouseDown</title>
+    <script>
+        function OnButtonDown(button) {
+            button.style.color = '#ff0000';
+        }
+        function OnButtonUP(button) {
+            button.style.color = '#000000';
+        }
+    </script>
+</head>
+<body>
+    <button onmousedown="OnButtonDown(this)" onmouseup="OnButtonUP(this)">눌러보세요!</button>
+</body>
+</html>

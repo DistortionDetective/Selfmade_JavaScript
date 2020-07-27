@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom_remove</title>
+    <script>
+        function removeNode() {
+            var parent = document.getElementById('target');
+            var child = document.getElementById('p1');
+            parent.removeChild(child);
+        }
+        function removeNode_2() {
+            var parent = document.getElementById('target');
+            var child = document.getElementById('p2');
+            parent.removeChild(child);
+        }
+        function addtext(t) {
+    if (document.createTextNode) {
+        var node = document.createTextNode(t);
+        document.getElementById('target').appendChild(node);
+    }
+}
+    </script>
+</head>
+<body>
+    <div id="target">
+        <p id="p1">첫번째 단락</p>
+        <p id="p2">두번째 단락</p>
+    </div>
+    <button onclick="removeNode()">첫번째 단락제거</button>
+    <button onclick="removeNode_2()">두번째 단락제거</button>
+    <button onclick="addtext('첫번째 단락')">첫번째 단락 다시 추가하기</button>
+</body>
+</html>
